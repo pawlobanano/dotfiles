@@ -1,0 +1,23 @@
+[user]
+	email = 1054126+pawlobanano@users.noreply.github.com
+	name = Paweł Banach
+[alias]
+	co = checkout
+	tr = log --graph --pretty='format:%C(yellow)%h%Creset %s %Cgreen(%an)%Creset %Cred%d%Creset'
+	st = status
+	ci = commit -a
+	di = diff
+	br = branch
+	lo = log --graph --color --decorate
+	sd = stash drop
+	sl = stash list
+	sp = stash pop
+	ss = stash save
+	delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
+	rebase-master = rebase master
+	remove-deleted-files = !git ls-files --deleted | xargs -I % git rm %
+[core]
+	editor = code
+	excludesfile = /home/pawlo/.gitignore
+[color]
+	ui = true
